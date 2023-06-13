@@ -1,0 +1,98 @@
+metadata.format.version = "1.1"
+
+[versions]
+
+# Compile only
+velocity = "3.2.0-SNAPSHOT"
+waterfall="1.19-R0.1-SNAPSHOT"
+paper = "1.19.4-R0.1-SNAPSHOT"
+
+libby = "1.2.0"
+configurate = "4.1.2"
+miniplaceholders = "1.3.1"
+
+# Plugins
+blossom = "1.3.1"
+shadow = "8.1.1"
+runtask = "2.1.0"
+plugin-yml = "0.5.3"
+indra = "3.0.1"
+
+# Test versions
+slf4j = "2.0.7"
+log4j2 = "2.20.0"
+
+# Required by Configurate 4
+geantyref = "1.3.13"
+
+adventure-api = "4.13.1"
+adventure-platform = "4.3.0"
+
+annotations = "24.0.1"
+
+sqlite = "3.41.2.1"
+hikaricp = "5.0.1"
+guava = "31.1-jre"
+
+commons-compress = "1.23.0"
+commons-text = "1.10.0"
+
+geoip = "4.0.1"
+jackson = "2.14.2"
+maxmind-db = "3.0.0"
+
+caffeine = "3.1.6"
+
+
+[libraries]
+# Adventure
+adventure-platform-bungeecord = { group =  "net.kyori", name = "adventure-platform-bungeecord", version.ref = "adventure-platform" }
+adventure-serializer-legacy = { group = "net.kyori", name = "adventure-text-serializer-legacy", version.ref = "adventure-api" }
+adventure-api = { group = "net.kyori", name = "adventure-api", version.ref = "adventure-api" }
+
+annotations = { module = "org.jetbrains:annotations", version.ref = "annotations" }
+
+# Platform Compile Only Dependencies
+velocity = { group  = "com.velocitypowered", name = "velocity-api", version.ref = "velocity" }
+paper = { group = "io.papermc.paper", name = "paper-api", version.ref = "paper" }
+waterfall = { group = "io.github.waterfallmc", name = "waterfall-api", version.ref = "waterfall" }
+
+configurate = { module = "org.spongepowered:configurate-hocon", version.ref = "configurate" }
+miniplaceholders = { group = "com.github.4drian3d", name = "MiniPlaceholders", version.ref = "miniplaceholders" }
+
+# Included Dependencies
+libby-velocity = { group = "net.byteflux", name = "libby-velocity", version.ref = "libby" }
+
+# Loggers
+slf4j = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+log4j2 = { group = "org.apache.logging.log4j", name = "log4j-core", version.ref = "log4j2" }
+
+sqlite = { module = "org.xerial:sqlite-jdbc", version.ref = "sqlite" }
+hikaricp = { module = "com.zaxxer:HikariCP", version.ref = "hikaricp" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+
+commons-text = { group = "org.apache.commons", name = "commons-text", version.ref = "commons-text" }
+commons-compress = { group = "org.apache.commons", name = "commons-compress", version.ref = "commons-compress" }
+
+geoip = { group = "com.maxmind.geoip2", name = "geoip2", version.ref = "geoip" }
+maxmind-db = { group = "com.maxmind.db", name = "maxmind-db", version.ref = "maxmind-db" }
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+
+caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version.ref = "caffeine" }
+
+
+[plugins]
+
+blossom = { id = "net.kyori.blossom", version.ref = "blossom" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+indra = { id = "net.kyori.indra.publishing", version.ref = "indra" }
+
+# Run Task
+runvelocity = { id = "xyz.jpenilla.run-velocity", version.ref = "runtask" }
+runpaper = { id = "xyz.jpenilla.run-paper", version.ref = "runtask" }
+runwaterfall = { id = "xyz.jpenilla.run-waterfall", version.ref = "runtask" }
+
+pluginyml-bungee = { id = "net.minecrell.plugin-yml.bungee", version.ref = "plugin-yml" }
+pluginyml-bukkit = { id = "net.minecrell.plugin-yml.bukkit", version.ref = "plugin-yml" }

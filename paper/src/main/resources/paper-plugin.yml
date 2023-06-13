@@ -1,0 +1,8 @@
+name: EpicGuard
+version: '${version}'
+main: me.xneox.epicguard.paper.EpicGuardPaper
+description: Bot protection system for Minecraft servers.
+website: https://github.com/4drian3d/EpicGuard
+authors: [4drian3d, xneox]
+api-version: '1.19'
+loader: me.xneox.epicguard.paper.LibraryLoader
